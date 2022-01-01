@@ -35,7 +35,7 @@ header {
 .logo {
   width: 15%;
   height: 15%;
-  margin:0rem 0rem 0rem 0rem;
+  margin:0rem 0rem 0rem 1rem;
 }
 .demo-logo {
   display: flex;
