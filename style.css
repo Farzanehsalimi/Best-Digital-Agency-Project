@@ -31,7 +31,7 @@ header {
   align-items: center;
 }
 
-/* Logo */
+/*------------------------------- Logo ----------------------------------------*/
 .demo-logo {
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@ header {
   align-items: center;
 }
 
-/* navbar items */
+/*-------------------------------- navbar items ----------------------------------- */
 .menu-items {
   width: 36.36%;
   margin-top:.5rem ;
@@ -275,23 +275,44 @@ padding-left: 1rem;
 }
 .what-client-say-3-box{
   width: 70%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 3rem 0 0rem 0;
 }
-.vertical-line{
+.prof-all{
   display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 70%;
-  background-color:linear-gradient(#25c1e9, #556ff8);
+}
+.vertical-line{
+  width: .2rem;
+  height: 10rem;
+  background-color:#556ff8;
+  /* margin: 1rem; */
 }
 .profile-pic{
-  width: 10%;
-  height: 10%;
+  width: 30%;
+  height: 30%;
+}
+.prof-text-img{
+  display: flex;
+  flex-direction: column;
+}
+.prof-text{
+font-size: .5em;
+white-space: pre-line;
 }
 .info-prof-all{
   display: flex;
-
+  flex-direction: row;
+}
+.info-prof{
+  display: flex;
+  flex-direction: column;
+}
+.prof-name{
+  font-weight: bold;
+}
+.prof-under-name{
+font-size: .6em;
 }
 /* ----------------------------------- part 5 --------------------------------- */
 .find-us-in-social-media-all{
@@ -315,12 +336,13 @@ padding-left: 1rem;
   display: flex;
   justify-content: center;
   margin: 1.6rem 0 2rem 0 ;
-
+  gap: .7rem;
 }
 .social-img{
   width:5.5% ;
   height: 5.5%;
 }
+
 /* ---------------------------------- footer ----------------------------------- */
  footer{
   background: linear-gradient(to left, #25c1e9, #556ff8);
