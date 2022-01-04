@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Caveat:wght@400;450;500;600;700&family=Roboto:wght@100;380;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Caveat:wght@400;500;600;700&family=Roboto:wght@100;500;700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,6 +12,7 @@
   --mainBlack: #000;
   --mainGreen: #f8faf9;
   --mainBlue: #f8f9fb;
+  --gradient-background:linear-gradient(to left, #25c1e9, #556ff8);;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
 }
 
 header {
-  height: 650px;
+  height: 680px;
   background:linear-gradient(to left, #25c1e9, #556ff8);
 }
 
@@ -180,16 +182,12 @@ a {
   background-color: #f0eded;
 }
 .button-services {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background: linear-gradient(to left, #25c1e9, #556ff8);
   border: 0;
   padding: 0.75rem 2.2rem;
   margin: 1.2em 3em 3em 3em;
   border-radius: 1.8rem;
   color: var(--mainWhite);
-  
 }
 .button-services a{
   font-size: 1.2em;
@@ -224,7 +222,7 @@ a {
   gap: 0rem;
   /* margin: 4rem  0rem 0rem 0rem ; */
 }
-/* ------------------about diamond----------------------- */
+/* ----------about diamond-------------- */
 .diamond-box{
   width: 100%;
   display: flex;
@@ -257,7 +255,8 @@ padding-left: 1rem;
   margin: 3rem 0 4.3rem 15.5rem;
 }
 
-/* ---------------------------------- part 4------------------------------------ */
+/* ---------------------------------- part 4 ------------------------------------ */
+
 .what-client-say-all{
   color: var(--mainBlack);
   display: flex;
@@ -267,52 +266,75 @@ padding-left: 1rem;
   width: 100%;
   max-width: 100%;
   height: 100%;
-  margin: 3rem 0 .6rem 0;
+  margin: 2.4rem 0 .6rem 0;
 }
 .what-client-say-h2{
-  font-size: 2em;
+  font-size: 2.2em;
   margin: 1.5rem 0 .6rem 0;
 }
-.what-client-say-3-box{
+.line-part4{
   width: 70%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  height: 0.3rem;
+  background-color: #f8faf9;
+
+}
+.what-client-say-3-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 3rem 0 0rem 0;
+  gap: 3.2rem;
 }
 .prof-all{
   display: flex;
 }
 .vertical-line{
-  width: .2rem;
-  height: 10rem;
+  width: .27rem;
+  height: 11.4rem;
   background-color:#556ff8;
-  /* margin: 1rem; */
 }
 .profile-pic{
-  width: 30%;
-  height: 30%;
+  width: 50px;
+  height: 50px;
+  margin: 0 0 1rem 0;
 }
 .prof-text-img{
   display: flex;
   flex-direction: column;
+  margin: 0 .5rem 0rem 0;
 }
-.prof-text{
-font-size: .5em;
+.prof-lorem{
+font-size: .94em;
 white-space: pre-line;
+margin: 0 0 0rem .6rem;
+font-weight: bold;
+line-height: 1.3rem;
 }
 .info-prof-all{
   display: flex;
   flex-direction: row;
+  margin: 1.2rem 0 .1rem .8rem;
+  justify-content: flex-start;
+  gap: .3rem;
 }
 .info-prof{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  margin: .75rem 0 0 0;
+  gap: .3rem;
 }
 .prof-name{
   font-weight: bold;
 }
 .prof-under-name{
-font-size: .6em;
+font-size: .8em;
+}
+
+.one{
+  display: flex;
+ align-items: end;
+ gap: .2rem;
 }
 /* ----------------------------------- part 5 --------------------------------- */
 .find-us-in-social-media-all{
@@ -329,13 +351,14 @@ font-size: .6em;
 }
 .find-us-in-social-media-h2{
   font-size: 1.5em;
-  margin: 2rem 0rem 0rem 0rem;
-  font-weight: 450;
+  margin: 2.9rem 0rem 0rem 0rem;
+  font-weight: 500;
+  word-spacing: .1rem;
 }
 .social-imgs{
   display: flex;
   justify-content: center;
-  margin: 1.6rem 0 2rem 0 ;
+  margin: 1.6rem 0 3.1rem 0 ;
   gap: .7rem;
 }
 .social-img{
@@ -346,11 +369,59 @@ font-size: .6em;
 /* ---------------------------------- footer ----------------------------------- */
  footer{
   background: linear-gradient(to left, #25c1e9, #556ff8);
+}
+.footer-3box{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+.footer-box1{
+  display: flex;
+  flex-direction:column;
+}
+.logo-all{
+display: flex;
+flex-direction: row;
+justify-content: ;
+}
+.logo-footer{
+  width: 40%;
+  height: 40%;
+}
+.demo-logo-text-footer{
+  font-family:'Caveat',sans-serif;
+  font-weight: 600;
+  margin: 1rem 0rem 0rem 0rem;
+  font-size: 1.6em;
 } 
+.footer-lorem{
+  white-space: pre-line;
+}
+.button-footer{
+  background:var(--gradient-background);
+  border: 0;
+  padding: 0.75rem 2.2rem;
+  margin: 1.2em 3em 3em 3em;
+  border-radius: .3rem;
+  color: var(--mainWhite);
+}
 .copyright-line{
+  width: 70%;
 display: flex;
 justify-content: center;
-margin: 1rem 0 0rem 0;
+align-items: center;
+margin: 1rem 0 1rem 0;
+}
+.bottom-line{
+  width: 70%;
+  height: 0.1rem;
+  background-color:#f8faf9;
+}
+.bottom-bottom{
+width: 100%;
+height: .1rem;
+background: linear-gradient(to left, #25c1e9, #556ff8);
 }
 /* ------------------------------------- responsive ----------------------------------------- */
  @media (max-width: 800px) {
