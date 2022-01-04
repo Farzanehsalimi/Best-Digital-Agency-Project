@@ -374,7 +374,7 @@ font-size: .8em;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-
+margin: 3rem 0 3rem 0;
 }
 .footer-box1{
   display: flex;
@@ -382,8 +382,7 @@ justify-content: space-around;
 }
 .logo-all{
 display: flex;
-flex-direction: row;
-justify-content: ;
+justify-content:;
 }
 .logo-footer{
   width: 40%;
@@ -394,7 +393,36 @@ justify-content: ;
   font-weight: 600;
   margin: 1rem 0rem 0rem 0rem;
   font-size: 1.6em;
+}
+.footer-box2{
+  display:grid;
+  gap: .5rem;
+}
+.contact-us-3box{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
 } 
+.icone-box{
+  background:linear-gradient(to left, #25c1e9, #556ff8);
+  padding:.3rem .5rem 0rem .5rem;
+}
+.location{
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 0rem 0 0;
+}
+.phone{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.mail{
+  width: 1.6rem;
+  height: 1.6rem;
+}
 .footer-lorem{
   white-space: pre-line;
 }
