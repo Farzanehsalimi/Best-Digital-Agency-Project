@@ -22,46 +22,40 @@ body {
   font-weight: 400;
 }
 
+/*-------------------------- part 1 -------------------------*/
 header {
   height: 680px;
   background:linear-gradient(to left, #25c1e9, #556ff8);
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*------------------------------- Logo ----------------------------------------*/
-.demo-logo {
-  display: flex;
-  align-items: center;
-  margin:.5rem 0rem 0rem .5rem;
-}
-.logo {
-  width: 14%;
-  height: 14%;
-}
-.demo-logo-text{
-  font-family:'Caveat',sans-serif;
-  font-weight: 600;
-  margin: 0rem 0rem 0rem 0rem;
-  font-size: 1.6em;
-}
-
-.navbar-center {
+/*-------------------------- navbar -------------------------*/
+.navbar-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/*-------------------------------- navbar items ----------------------------------- */
+/*-------------------------- logo -------------------------*/
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin:.5rem 0rem 0rem .5rem;
+}
+.nav-logo-svg {
+  width: 14%;
+  height: 14%;
+}
+.nav-logo-text{
+  font-family:'Caveat',sans-serif;
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+/*-------------------------- menu items -------------------------*/
 .menu-items {
   width: 36.36%;
   margin-top:.5rem ;
-  cursor: pointer;
 }
 ul {
   font-size: 1em;
@@ -69,14 +63,15 @@ ul {
   display: flex;
   align-items: center;
   gap: 1.6em;
-  text-decoration: none;
+
 }
 a {
   text-decoration: none;
   color: var(--mainWhite);
 }
 
-.header-main-content {
+/*-------------------------- header main content -------------------------*/
+.header-main-container {
   max-width: 1170px;
   width: 100%;
   display: flex;
@@ -84,10 +79,11 @@ a {
   justify-content:end;
   gap: 2.5rem;
   white-space: pre-line;
-  margin: 7rem 0rem 0rem 0rem ;
+  margin-top: 7rem;
 }
-.header-text{
-  margin:0rem 2rem 0rem 0rem;
+/*-------------------------- header text box -------------------------*/
+.header-text-box{
+  margin-right:2rem;
   line-height: .7rem;
 }
 .header-h1{
@@ -98,27 +94,28 @@ a {
   font-weight: 450;
   line-height: 1.4rem;
 }
-.header-img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  margin:0rem 5rem 0rem 0rem;
-}
-.play-button {
+.header-play-button {
   display: flex;
   align-items: center;
   gap: .4rem;
   font-weight: 350;
-  margin:0rem 0rem 0rem .6rem ;
+  margin-left:.6rem ;
 }
-.play-icone {
+.header-play-icone {
   height: 12%;
   width: 12%;
 }
+.header-play-text{}
 
-/* --------------------------------- part 2 ----------------------------------------- */
+/*-------------------------- header img box -------------------------*/
+.header-img {
+  max-width: 400px;
+  width: 100%;
+  margin-right:5rem;
+}
 
-.what-we-do-all {
+/*-------------------------- part 2 -------------------------*/
+.part2-container {
   color: var(--mainBlack);
   display: flex;
   flex-direction: column;
@@ -127,6 +124,7 @@ a {
   white-space: pre-line;
   margin-top: 4.5rem;
 }
+/*-------------------------- part 2 Top -------------------------*/
 .what-we-do-h2 {
   font-size: 2em;
   padding: 1rem;
@@ -136,9 +134,8 @@ a {
   height: 0.15rem;
   background-color: #f0eded;
 }
-
-/******************************* 3 Product ****************************/
- .services-container {
+/*-------------------------- part 2 Main -------------------------*/
+.services-container {
   width: 100%;
   max-width: 70%;
   display: grid;
@@ -146,29 +143,29 @@ a {
   grid-column-gap: 2rem;
   grid-row-gap: 0rem;
 }
+.services-box{}
 
 .img-container {
   max-width: 200px;
   width: 70%;
   margin-left: 2em;
 }
-.services-img {
+.part2-imgs {
   width: 100%;
   min-height: 120px;
-  /* height: auto; */
 }
-.services-desc {
+.part2-desc {
   display: flex;
   flex-direction: column;
   white-space: pre-line;
   text-align: justify;
 }
- .services-title {
+ .part2-title {
   margin: 0 0 1rem 2rem;
   font-size: 1.3em;
   line-height: 0.01;
 }
-.services-lorem {
+.part2-lorem {
   font-weight: 400;
   font-size: 0.8em;
   line-height: 1.15rem;
@@ -181,6 +178,7 @@ a {
   height: 0.15rem;
   background-color: #f0eded;
 }
+/*-------------------------- part 2 Bottom -------------------------*/
 .button-services {
   background: linear-gradient(to left, #25c1e9, #556ff8);
   border: 0;
@@ -194,8 +192,8 @@ a {
   font-weight: 400;
 }
 
-/*------------------------------------------- part 3 ---------------------------------------- */
- .why-choose-us-all {
+/*-------------------------- part 3 -------------------------*/
+.part3-container{
   color: var(--mainBlack);
   display: flex;
   flex-direction: column;
@@ -206,58 +204,53 @@ a {
   height: 100%;
   background-color: #f8faf9;
 }
+/*-------------------------- part 3 Top -------------------------*/
 .why-choose-us-h2{
   font-size: 2.2em;
   margin: 2.1rem 0 .9rem 0;
 }
-.why-we-are-different-all{
+/*-------------------------- part 3 Main -------------------------*/
+.part3-main-content{
   width: 70%;
   height: 100%;
   display: flex;
   justify-content:start;
 }
-.why-we-are-different{
-  display: flex;
-  flex-direction:column;
-  gap: 0rem;
-  /* margin: 4rem  0rem 0rem 0rem ; */
-}
-/* ----------about diamond-------------- */
-.diamond-box{
-  width: 100%;
-  display: flex;
-flex-direction: row;
-justify-content: flex-end;
-  margin: 0rem  0rem 0rem 0rem ;
-}
+/*-------------------------- about diamond -------------------------*/
 .diamond{
   height: 2.2%;
   width: 2.2%;
   margin: 4rem .2rem 4.1rem 0rem;
 }
-.why-we-are-different-h3{
+/*-------------------------- part 3 text box -------------------------*/
+.part3-text-box{
+  display: flex;
+  flex-direction:column;
+  gap: 0rem;
+}
+.part3-text-box-h3{
   font-size: 1.3em;
   margin: 4rem 0 1.4rem 0rem;
 }
-.why-we-are-different-list{
+.part3-text-box-list{
 display: flex;
 flex-direction: column;
 align-items:flex-start;
 gap: .7rem;
-margin: 0rem 0 0 .2rem;
+margin-left:.2rem;
 list-style:disc;
 font-size: .9em;
 padding-left: 1rem;
 }
-.why-choose-us-img{
+/*-------------------------- part 3 img -------------------------*/
+.part3-img{
   width: 32%;
   height: 32%;
   margin: 3rem 0 4.3rem 15.5rem;
 }
 
-/* ---------------------------------- part 4 ------------------------------------ */
-
-.what-client-say-all{
+/*-------------------------- part 4 -------------------------*/
+.part4-container{
   color: var(--mainBlack);
   display: flex;
   flex-direction: column;
@@ -268,34 +261,36 @@ padding-left: 1rem;
   height: 100%;
   margin: 2.4rem 0 .6rem 0;
 }
+/*-------------------------- part 4 Top -------------------------*/
 .what-client-say-h2{
   font-size: 2.2em;
   margin: 1.5rem 0 .6rem 0;
 }
-.line-part4{
+.part4-line{
   width: 70%;
   height: 0.3rem;
   background-color: #f8faf9;
 }
-.what-client-say-3-box{
+/*-------------------------- part 4 Main -------------------------*/
+.part4-3box{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem 0 0rem 0;
   gap: 3.2rem;
 }
-.prof-all{
+.part4-profile-container{
   display: flex;
+  align-items: end;
+  gap: .2rem;
 }
-.vertical-line{
+.part4-vertical-line{
   width: .27rem;
   height: 11.4rem;
   background-color:#556ff8;
 }
-.profile-pic{
-  width: 50px;
-  height: 50px;
-  margin: 0 0 1rem 0;
+.part4-prof-all{
+  display: flex;
 }
 .prof-text-img{
   display: flex;
@@ -303,11 +298,11 @@ padding-left: 1rem;
   margin: 0 .5rem 0rem 0;
 }
 .prof-lorem{
-font-size: .94em;
-white-space: pre-line;
-margin: 0 0 0rem .6rem;
-font-weight: bold;
-line-height: 1.3rem;
+  font-size: .94em;
+  white-space: pre-line;
+  margin: 0 0 0rem .6rem;
+  font-weight: bold;
+  line-height: 1.3rem;
 }
 .info-prof-all{
   display: flex;
@@ -315,6 +310,11 @@ line-height: 1.3rem;
   margin: 1.2rem 0 .1rem .8rem;
   justify-content: flex-start;
   gap: .3rem;
+}
+.profile-pic{
+  width: 50px;
+  height: 50px;
+  margin: 0 0 1rem 0;
 }
 .info-prof{
   display: flex;
@@ -330,13 +330,8 @@ line-height: 1.3rem;
 font-size: .8em;
 }
 
-.one{
-  display: flex;
- align-items: end;
- gap: .2rem;
-}
-/* ----------------------------------- part 5 --------------------------------- */
-.find-us-in-social-media-all{
+/*-------------------------- part 5 -------------------------*/
+.part5-container{
   color: var(--mainBlack);
   background-color: #f8faf9;
   display: flex;
@@ -365,7 +360,9 @@ font-size: .8em;
   height: 5.5%;
 }
 
-/* ---------------------------------- footer ----------------------------------- */
+/*-------------------------- footer -------------------------*/
+.bottom-wave{}
+
 footer{
   background: linear-gradient(to left, #25c1e9, #556ff8);
 }
@@ -375,27 +372,25 @@ display: flex;
 margin: 0 auto;
 }
 
-/* -------------- footer box 1 ------------------- */
+/*-------------------------- footer box 1 -------------------------*/
 .footer-box1{
 display: flex;
 flex-direction: column;
 }
-.logo-all{
+/*-------------------------- footer logo -------------------------*/
+.footer-logo-container{
   display: flex;
   align-items: center;
   margin:0rem 0rem 0rem 0rem;
-  /* margin: 0 auto; */
 }
-.logo-footer{
+.footer-logo{
   width: 3.3rem;
   height: 3.3rem;
-  /* margin: 2rem 0 2rem 0; */
 }
-.demo-logo-text-footer{
+.footer-demo-logo-text{
   font-family:'Caveat',sans-serif;
   font-weight: 600;
   font-size: 2em;
-  /* margin: rem 0 0rem 0; */
 }
 .footer-lorem{
   font-size: .8em;
@@ -404,7 +399,7 @@ flex-direction: column;
   margin: 2.4rem 0 2rem 0;
 }
 
-/* -------------- footer box 2 ------------------- */
+/*-------------------------- footer box 2 -------------------------*/
 .footer-box2{
   display:grid;
   gap: rem;
@@ -444,7 +439,7 @@ flex-direction: column;
   margin: 0.25rem 0.1rem;
 }
 
-/* -------------- footer box 3 ------------------- */
+/*-------------------------- footer box 3 -------------------------*/
 .footer-box3{
 display: flex;
 flex-direction: column;
@@ -456,16 +451,13 @@ margin: .4rem 0 0 3rem;
   font-size: 1.1em;
   margin:.5rem 0 0 0;
 }
-.form{
+.form{}
 
-}
 #form-input{
   font-size: 1em;
   color:rgb(136, 130, 130);
-  /* width: 100%; */
   padding: .6rem 3rem .6rem .5rem ;
   margin: 1rem 3rem .6rem 0rem;
-  /* display: inline-block; */
   border: 1px solid #ccc;
   border: 0;
   border-radius: 2px;
@@ -474,14 +466,14 @@ margin: .4rem 0 0 3rem;
   background:var(--gradient-background);
   border: 0;
   padding: 0.75rem 1.4rem 0.75rem 1.4rem ;
-  /* margin: 0 1rem 0 1rem; */
   border-radius: .28rem;
   color: var(--mainWhite);
   text-align: center;
   font-weight: bold;
   font-size: .9em
 }
-/* -------------------- end --------------------- */
+
+/*-------------------------- end -------------------------*/
 .copyright-text{
 width: 70%;
 display: flex;
@@ -503,7 +495,7 @@ height: 1rem;
 background: linear-gradient(to left, #25c1e9, #556ff8);
 }
 
-/* ------------------------------------- responsive ----------------------------------------- */
+/*-------------------------- responsive -------------------------*/
  @media (max-width: 800px) {
   header {
     height: 100vh;

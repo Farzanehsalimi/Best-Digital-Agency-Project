@@ -5,26 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
-    />
     <title>Best Digital Agency</title>
   </head>
   <body>
 
-    <!------------------------------------------ navbar ---------------------------------------->
+    <!-------------------------- part 1 -------------------------->
     <header>
-      <nav class="navbar">
-        <div class="navbar-center">
-          <section class="demo-logo">
+      <!-------------------------- navbar -------------------------->
+      <nav class="navbar-container">
+        <!-------------------------- logo -------------------------->
+          <section class="nav-logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="logo"
+              class="nav-logo-svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -36,8 +29,9 @@
                 d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
               />
             </svg>
-            <p class="demo-logo-text">DEMO LOGO</p>
+            <p class="nav-logo-text">DEMO LOGO</p>
             </section>
+        <!-------------------------- menu items -------------------------->  
           <div class="menu-items">
             <ul>
               <li><a href="#">HOME</a></li>
@@ -47,20 +41,23 @@
               <li><a href="#">CONTACT</a></li>
             </ul>
           </div>
-        </div>
+        <!-------------------------- end of menu -------------------------->
       </nav>
-      <div class="header-main-content">
-        <section class="header-text">
+      <!---------------------------- end of navbar ------------------------------>
+
+      <!-------------------------- header main content -------------------------->  
+      <div class="header-main-container">
+        <section class="header-text-box">
           <h1 class="header-h1">Best Digital Agency</h1>
           <span class="header-lorem">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. iusto aspernatur
 nesciunt repudiandae.voluptas ipsa impedit suscipit dolor ab provident
 pariatur...      
           </span>
-          <div class="play-button">
+          <div class="header-play-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="play-icone"
+              class="header-play-icone"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -68,98 +65,95 @@ pariatur...
                 fill-rule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
                 clip-rule="evenodd"
-              /></svg
-            ><span class="play-text"> washing music</span>
+              /></svg>
+              <span class="header-play-text"> washing music</span>
           </div>
         </section>
-
+        <!---------------------------- header img box ------------------------------>
         <img
           class="header-img"
           src="./img/intro/Data_re_80ws.svg"
           alt="intro"
         />
       </div>
+      <!---------------------------- header wave ------------------------------> 
       <img src="./img/wave/top-wave.svg" class="wave-top">
     </header>
-<!---------------------------- end of navbar ------------------------------>
-    <!-------------------------- part 2 ---------------------------------->
 
-    <section class="what-we-do-all">
+<!-------------------------- part 2 ---------------------------------->
+    <section class="part2-container">
       <h2 class="what-we-do-h2">WHAT WE DO?</h2>
       <div class="line"></div>
-
-      <!-- All Services -->
+    <!-------------------------- All Services ---------------------------------->
       <div class="services-container">
-        <!-- service-1 -->
-        <section class="services">
+        <!-------------------------- service 1 ---------------------------------->
+        <section class="services-box">
           <div class="img-container">
             <img
-              class="services-img"
+              class="part2-imgs"
               src="./img/img-services/Charts_re_5qe9.svg"
               alt="pic-1"
             />
           </div>
-          <div class="services-desc">
-            <h3 class="services-title">Growth Marketing...</h3>
-            <p class="services-lorem">
+          <div class="part2-desc">
+            <h3 class="part2-title">Growth Marketing...</h3>
+            <p class="part2-lorem">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, error molestias debitis quibusdam ratione officiis nobis aliquid unde repellendus vitae pariatur...
             </p>  
           </div>
           <div class="underline"></div>
         </section>
-
-        <!-- service-2 -->
-        <section class="services">
+        <!-------------------------- service 2 ---------------------------------->
+        <section class="services-box">
           <div class="img-container">
             <img
-              class="services-img"
+              class="part2-imgs"
               src="./img/img-services/Social_media_re_w12q.svg"
               alt="pic-2"
             />
           </div>
-          <div class="services-desc">
-            <h3 class="services-title">Online Branding...</h3>
-            <p class="services-lorem">
+          <div class="part2-desc">
+            <h3 class="part2-title">Online Branding...</h3>
+            <p class="part2-lorem">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, error molestias debitis quibusdam ratione officiis nobis aliquid unde repellendus vitae pariatur...
             </p>
           </div>
           <div class="underline"></div>
         </section>
 
-        <!-- service-3 -->
-        <section class="services">
+        <!-------------------------- service 3 ---------------------------------->
+        <section class="services-box">
           <div class="img-container">
             <img
-              class="services-img"
+              class="part2-imgs"
               src="./img/img-services/Problem_solving_re_4gq3.svg"
               alt="pic-3"
             />
           </div>
-          <div class="services-desc">
-            <h3 class="services-title">Animated Ads...</h3>
-            <p class="services-lorem">
+          <div class="part2-desc">
+            <h3 class="part2-title">Animated Ads...</h3>
+            <p class="part2-lorem">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, error molestias debitis quibusdam ratione officiis nobis aliquid unde repellendus vitae pariatur...
                                         </p>
           </div>
           <div class="underline"></div>
         </section>
       </div>
-
-      <!-- blue button -->
+  <!-------------------------- blue button ---------------------------------->
       <button class="button-services"><a href="#">All Services</a></button>
     </section>
 
-    <!-------------------------- End part 2 ---------------------------------->
-
     <!-------------------------- part 3 ---------------------------------->
-    <section class="why-choose-us-all">
+  <section class="part3-container">
+    <!-------------------------- part 3 top ---------------------------------->
       <h2 class="why-choose-us-h2">Why Choose Us?</h2>
       <div class="line"></div>
-<main class="why-we-are-different-all">
+    <!-------------------------- part 3 main ---------------------------------->
+    <main class="part3-main-content">
       <img src="./img/Diamond/diamond-outline.svg" class="diamond" alt="diamond">
-      <div class="why-we-are-different" >
-      <h3 class="why-we-are-different-h3">Why We Are Different...</h3>
-      <ul class="why-we-are-different-list"> 
+      <div class="part3-text-box" >
+      <h3 class="part3-text-box-h3">Why We Are Different...</h3>
+      <ul class="part3-text-box-list"> 
         <li>Before is doing business with honestly</li>
         <li>Before is doing business with honestly</li>
         <li>Before is doing business with honestly</li>
@@ -168,22 +162,20 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, error molestias d
         <li>Before is doing business with honestly</li>
       </ul>
     </div>
-    <img src="./img/about-us/statistic_chart_38b6.svg" class="why-choose-us-img" alt="statistic_chart">
-  </main>
-      <!-- <div class="why-we-are-different-all"> -->   
-          <!-- <section class="diamond-box"> -->  
-          </section>
+    <!-------------------------- part 3 img ---------------------------------->
+    <img src="./img/about-us/statistic_chart_38b6.svg" class="part3-img" alt="statistic_chart">
+    </main>
+  </section>
 
-    <!---------------------------------- part 4 ------------------------------------->
-    <section class="what-client-say-all">
+    <!-------------------------- part 4 ---------------------------------->
+    <section class="part4-container">
       <h2 class="what-client-say-h2">What Client Say?</h2>
-      <div class="line-part4"></div>
-      <main class="what-client-say-3-box">
-
-        <!-- profile 1 -->
-        <div class="one">
-        <div class="vertical-line"></div>
-        <div class="prof-all">
+      <div class="part4-line"></div>
+      <main class="part4-3box">
+    <!-------------------------- profile 1 ---------------------------------->
+        <div class="part4-profile-container">
+        <div class="part4-vertical-line"></div>
+        <div class="part4-prof-all">
         <div class="prof-text-img">
         <div class="prof-lorem">
 Lorem ipsum dolor sit amet,
@@ -200,11 +192,10 @@ odit, facere amet!</div>
         </div>
       </div>
       </div>
-      
-        <!-- profile 2 -->
-        <div class="one">
-          <div class="vertical-line"></div>
-        <div class="prof-all">
+    <!-------------------------- profile 2 ---------------------------------->
+      <div class="part4-profile-container">
+          <div class="part4-vertical-line"></div>
+        <div class="part4-prof-all">
       <div class="prof-text-img">
         <div class="prof-lorem">
 Lorem ipsum dolor sit amet,
@@ -221,10 +212,10 @@ odit, facere amet!</div>
         </div>
 </div>
 </div>
-        <!-- profile 3 -->
-        <div class="one">
-          <div class="vertical-line"></div>
-        <div class="prof-all">
+    <!-------------------------- profile 3 ---------------------------------->
+        <div class="part4-profile-container">
+          <div class="part4-vertical-line"></div>
+        <div class="part4-prof-all">
           <div class="prof-text-img">
           <div class="prof-lorem">
   Lorem ipsum dolor sit amet,
@@ -243,9 +234,9 @@ odit, facere amet!</div>
       </div>
       </main>
     </section>
-    
-      <!---------------------------------- part 5 ------------------------------------->
-      <section class="find-us-in-social-media-all">
+
+    <!-------------------------- part 5 ---------------------------------->
+    <section class="part5-container">
         <h2 class="find-us-in-social-media-h2">Find US In Social Media...</h2>
         <div class="social-imgs">
           <img src="./img/social/1.png" class="social-img" alt="1">
@@ -255,21 +246,19 @@ odit, facere amet!</div>
           <img src="./img/social/5.png" class="social-img" alt="5">
           <img src="./img/social/6.png" class="social-img" alt="6">
         </div>
-
       </section>
 
-      <!-- ----------------------------- footer ---------------------------------------->
-    
+    <!-------------------------- footer ---------------------------------->    
       <footer>
       <img src="./img/wave/bottom-wave.svg" class="bottom-wave" alt="bottom-wave">
+    <!-------------------------- footer 3 box ---------------------------------->    
       <main class="footer-3box">
-        
-        <!-------------- footer box 1 ------------------->
+    <!-------------------------- footer box 1 ---------------------------------->    
       <section class="footer-box1">
-         <div class="logo-all">
+         <div class="footer-logo-container">
           <svg
            xmlns="http://www.w3.org/2000/svg"
-           class="logo-footer"
+           class="footer-logo"
            fill="none"
            viewBox="0 0 24 24"
            stroke="currentColor"
@@ -281,16 +270,15 @@ odit, facere amet!</div>
              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
            />
          </svg>
-         <p class="demo-logo-text-footer">DEMO LOGO</p>
+         <p class="footer-demo-logo-text">DEMO LOGO</p>
         </div>
          <p class="footer-lorem">Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Et quibusdam ipsa
             nulla qui mollitia delectus quos labore alqu Ul
             ias distinctio ullam..</p>
         </section>
-
-        <!-------------- footer box 2 ------------------->
-      <section class="footer-box2">
+    <!-------------------------- footer box 2 ---------------------------------->    
+    <section class="footer-box2">
         <div class="contact-us-3box">
           <h4 class="contact-us">Contact US</h4></div>
         <div class="contact-us-3box">
@@ -318,8 +306,8 @@ odit, facere amet!</div>
         <p class="footer-box2-text">info@Khorasan.com</p>
       </div>
       </section>
-      <!-------------- footer box 3 ------------------->
-      <section class="footer-box3">
+    <!-------------------------- footer box 3 ---------------------------------->    
+    <section class="footer-box3">
         <h4 class="footer-box3-h4">Subscribe Newsletter</h4>
         <form class="form">
           <input type="text" name="" id="form-input" value="Sent Email...">
@@ -327,11 +315,10 @@ odit, facere amet!</div>
         <button class="button-footer"><a href="#">Subscribe</a></button>
       </section>
     </main>
-    <!-------------------- end --------------------->
-      <div class="bottom-line"></div>
+    <!-------------------------- end of footer ---------------------------------->    
+    <div class="bottom-line"></div>
       <div class="copyright-text">&copy; 2022 | Agency Website, Corporation</div>
-      <div class="bottom-bottom"></div>
-      
+      <div class="bottom-bottom"></div> 
     </footer>
   </body>
 </html>
