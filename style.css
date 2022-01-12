@@ -24,7 +24,6 @@ body {
 
 /*-------------------------- part 1 -------------------------*/
 header {
-  height: 680px;
   background:linear-gradient(to left, #25c1e9, #556ff8);
 }
 
@@ -34,6 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 /*-------------------------- logo -------------------------*/
@@ -43,8 +43,8 @@ header {
   margin:.5rem 0rem 0rem .5rem;
 }
 .nav-logo-svg {
-  width: 14%;
-  height: 14%;
+  width: 60px;
+  height:60px;
 }
 .nav-logo-text{
   font-family:'Caveat',sans-serif;
@@ -54,18 +54,20 @@ header {
 
 /*-------------------------- menu items -------------------------*/
 .menu-items {
-  width: 36.36%;
-  margin-top:.5rem ;
+  /* width: 36.36%; */
+  display: flex;
+  margin:1rem ;
 }
 ul {
   font-size: 1em;
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 1.6em;
-
 }
 a {
+  /* gap: 1.6em; */
   text-decoration: none;
   color: var(--mainWhite);
 }
@@ -112,6 +114,11 @@ a {
   max-width: 400px;
   width: 100%;
   margin-right:5rem;
+}
+
+/*-------------------------- header wave -------------------------*/
+.wave-top{
+  transform: translateY(5px);
 }
 
 /*-------------------------- part 2 -------------------------*/
