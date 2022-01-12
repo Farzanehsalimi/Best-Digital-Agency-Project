@@ -12,7 +12,7 @@
   --mainBlack: #000;
   --mainGreen: #f8faf9;
   --mainBlue: #f8f9fb;
-  --gradient-background:linear-gradient(to left, #25c1e9, #556ff8);;
+  --gradient-background:linear-gradient(to left, #25c1e9, #556ff8);
 }
 
 body {
@@ -65,11 +65,16 @@ ul {
   flex-wrap: nowrap;
   gap: 1.6em;
 }
+.menu-items a:hover {
+  color: var(--mainBlack);
+}
 a {
   text-decoration: none;
   color: var(--mainWhite);
 }
-
+.menu-box{
+  display: none;
+}
 /*-------------------------- header main content -------------------------*/
 .header-main-container {
   max-width: 1170px;
@@ -78,15 +83,15 @@ a {
   flex-direction: row;
   justify-content:end;
   align-items: center;
-  /* gap: 2.5rem; */
+  gap: 1.3rem;
   white-space: pre-line;
-  margin-top:5.5rem;
+  margin-top:5rem;
 }
+
 /*-------------------------- header text box -------------------------*/
 .header-text-box{
   margin-right:2rem;
   margin:1rem 1rem 1rem 14rem;
-
   line-height: .7rem;
 }
 .header-h1{
@@ -130,8 +135,9 @@ a {
   justify-content: center;
   align-items: center;
   white-space: pre-line;
-  margin-top: 4.5rem;
+  margin-top: 1rem;
 }
+
 /*-------------------------- part 2 Top -------------------------*/
 .what-we-do-h2 {
   font-size: 2em;
@@ -142,6 +148,7 @@ a {
   height: 0.15rem;
   background-color: #f0eded;
 }
+
 /*-------------------------- part 2 Main -------------------------*/
 .services-container {
   width: 100%;
@@ -186,6 +193,7 @@ a {
   height: 0.15rem;
   background-color: #f0eded;
 }
+
 /*-------------------------- part 2 Bottom -------------------------*/
 .button-services {
   background: linear-gradient(to left, #25c1e9, #556ff8);
@@ -224,21 +232,28 @@ a {
   display: flex;
   justify-content:start;
 }
-/*-------------------------- about diamond -------------------------*/
+/*-------------------------- about diamond and h3-------------------------*/
+.part3-diamond-h3{
+  display: flex;
+  flex-direction: row;
+  margin: 0 0rem 0 0rem;
+  gap: .2rem;
+}
+
 .diamond{
-  height: 2.2%;
-  width: 2.2%;
-  margin: 4rem .2rem 4.1rem 0rem;
+  height: 28px;
+  width: 28px;
+  margin: 3.9rem .2rem 1rem 0rem;
+}
+.part3-text-box-h3{
+  font-size: 1.3em;
+  margin: 4rem 0 1.4rem 0rem;
 }
 /*-------------------------- part 3 text box -------------------------*/
 .part3-text-box{
   display: flex;
   flex-direction:column;
   gap: 0rem;
-}
-.part3-text-box-h3{
-  font-size: 1.3em;
-  margin: 4rem 0 1.4rem 0rem;
 }
 .part3-text-box-list{
 display: flex;
@@ -248,7 +263,7 @@ gap: .7rem;
 margin-left:.2rem;
 list-style:disc;
 font-size: .9em;
-padding-left: 1rem;
+padding-left: 3.4rem;
 }
 /*-------------------------- part 3 img -------------------------*/
 .part3-img{
@@ -503,32 +518,203 @@ height: 1rem;
 background: linear-gradient(to left, #25c1e9, #556ff8);
 }
 
-/*-------------------------- responsive -------------------------*/
- @media (max-width: 800px) {
-  header {
-    height: 100vh;
-    position: relative;
-    background-image: url(./img/top-wave1.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .menu-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-decoration: none;
-    cursor: pointer;
-  }
+/*-------------------------- Responsive part  -------------------------*/
+/*-------------------------- Media Queries -------------------------*/
 
-  .header-main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    white-space: pre-line;
-    margin: 1rem;
-  }
+@media screen and (max-width: 768px) {
+
+/*-------------------------- navbar -------------------------*/
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/*-------------------------- logo -------------------------*/
+.nav-logo {
+  display: flex;
+  align-items: center;
+  /* margin:.6rem .6rem 0rem .6rem; */
+}
+.nav-logo-svg {
+  color: var(--mainBlack);
+  width: 55px;
+  height:55px;
+}
+.nav-logo-text{
+  color: var(--mainBlack);
+  font-family:'Caveat',sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+/*-------------------------- menu items -------------------------*/
+.menu-items ul {
+  display: none;
+}
+.menu-box{
+  width: 30px;
+  height:30px;
+  display:flex;
+  justify-content: end;
+  /* margin:0rem 2rem 0 0rem; */
+}
+/*-------------------------- header main content -------------------------*/
+.header-main-container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  gap: 1rem;
+  white-space: pre-line;
+  margin-top:2rem;
+}
+
+/*-------------------------- header text box -------------------------*/
+.header-text-box{
+  margin:1rem 0 .6rem 3rem;
+  /* line-height: .7rem; */
+  color:var(--mainBlack);
+}
+.header-h1{
+  font-size: 2em;
+}
+.header-lorem {
+  font-size: 1.1em;
+  font-weight: 450;
+  line-height: 1.4rem;
+}
+.header-play-button {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-weight: 350;
+  margin-left:.6rem ;
+}
+.header-play-icone {
+  height: 12%;
+  width: 12%;
+}
+.header-play-text{
+  font-weight: 400;
+}
+
+/*-------------------------- header img box -------------------------*/
+.header-img {
+  max-width: 260px;
+  margin:0 auto;
+}
+
+/*-------------------------- part 3 -------------------------*/
+.part3-container{
+  color: var(--mainBlack);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*-------------------------- part 3 Top -------------------------*/
+.why-choose-us-h2{
+  font-size: 2.2em;
+  /* margin: 2.1rem 0 .9rem 0; */
+}
+/*-------------------------- part 3 Main -------------------------*/
+.part3-main-content{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+/*-------------------------- about diamond and h3-------------------------*/
+.part3-diamond-h3{
+  display: flex;
+  flex-direction: row;
+  margin: 0 0rem 0 0rem;
+  gap: .2rem;
+}
+.diamond{
+  height: 28px;
+  width: 28px;
+  margin: 3.9rem .2rem 1rem 0rem;
+}
+.part3-text-box-h3{
+  font-size: 1.3em;
+  margin: 4rem 0 1.4rem 0rem;
+}
+/*-------------------------- part 3 text box -------------------------*/
+.part3-text-box{
+  display: flex;
+  flex-direction:column;
+  gap: 0rem;
+}
+.part3-text-box-h3{
+  font-size: 1.3em;
+  margin: 4rem 0 1.4rem 0rem;
+}
+.part3-text-box-list{
+display: flex;
+flex-direction: column;
+/* align-items:flex-start; */
+gap: .7rem;
+/* margin-left:.2rem; */
+list-style:disc;
+font-size: .9em;
+padding-left: 1rem;
+}
+/*-------------------------- part 3 img -------------------------*/
+.part3-img{
+  height: 300px;
+  width: 300px;
+  margin:0 auto;
+}
+
+/*-------------------------- part 4 -------------------------*/
+.part4-container{
+  color: var(--mainBlack);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 2.4rem 0 .6rem 0;
+}
+/*-------------------------- part 4 Top -------------------------*/
+.what-client-say-h2{
+  font-size: 2.2em;
+  margin: 1.5rem 0 .6rem 0;
+}
+.part4-line{
+  width: 70%;
+  height: 0.3rem;
+  background-color: #f8faf9;
+}
+/*-------------------------- part 4 Main -------------------------*/
+.part4-3box{
+  flex-direction: column;
+}
+/*-------------------------- part 5 -------------------------*/
+.social-img{
+  width:50px ;
+  height:50px;
+}
+/*-------------------------- footer -------------------------*/
+.footer-3box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 4rem;
+}
+/*-------------------------- footer logo -------------------------*/
+.footer-lorem{
+  margin-top: 1rem;
+}
+}
+@media (max-width: 768px) {}
+@media (max-width: 1279px) {}
+@media (max-width: 1280px) {}
