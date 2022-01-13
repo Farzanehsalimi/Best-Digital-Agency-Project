@@ -26,7 +26,6 @@ body {
 header {
   background:linear-gradient(to left, #25c1e9, #556ff8);
 }
-
 /*-------------------------- navbar -------------------------*/
 .navbar-container {
   width: 100%;
@@ -35,7 +34,6 @@ header {
   align-items: center;
   flex-wrap: nowrap;
 }
-
 /*-------------------------- logo -------------------------*/
 .nav-logo {
   display: flex;
@@ -51,7 +49,6 @@ header {
   font-weight: 600;
   font-size: 1.6em;
 }
-
 /*-------------------------- menu items -------------------------*/
 .menu-items {
   display: flex;
@@ -71,6 +68,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--mainWhite);
+  transition: 0.5s;
 }
 .menu-box{
   display: none;
@@ -393,6 +391,7 @@ footer{
 width: 70%;
 display: flex;
 margin: 0 auto;
+gap: 1.8rem;
 }
 
 /*-------------------------- footer box 1 -------------------------*/
@@ -425,8 +424,8 @@ flex-direction: column;
 /*-------------------------- footer box 2 -------------------------*/
 .footer-box2{
   display:grid;
-  gap: rem;
-  margin: 0 auto;
+  /* gap: rem; */
+  margin: ;
 }
 .contact-us-3box{
   display: flex;
@@ -468,7 +467,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 gap: .5rem;
-margin: .4rem 0 0 3rem;
+margin: .4rem 0 0 0rem;
 }
 .footer-box3-h4{
   font-size: 1.1em;
@@ -520,23 +519,8 @@ background: linear-gradient(to left, #25c1e9, #556ff8);
 
 /*-------------------------- Responsive part  -------------------------*/
 /*-------------------------- Media Queries -------------------------*/
-
-@media screen and (max-width: 768px) {
-
-/*-------------------------- navbar -------------------------*/
-.navbar-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
+@media screen and (max-width: 640px) {
 /*-------------------------- logo -------------------------*/
-.nav-logo {
-  display: flex;
-  align-items: center;
-  /* margin:.6rem .6rem 0rem .6rem; */
-}
 .nav-logo-svg {
   color: var(--mainBlack);
   width: 55px;
@@ -548,7 +532,6 @@ background: linear-gradient(to left, #25c1e9, #556ff8);
   font-weight: 300;
   font-size: 2em;
 }
-
 /*-------------------------- menu items -------------------------*/
 .menu-items ul {
   display: none;
@@ -558,30 +541,103 @@ background: linear-gradient(to left, #25c1e9, #556ff8);
   height:30px;
   display:flex;
   justify-content: end;
-  /* margin:0rem 2rem 0 0rem; */
 }
 /*-------------------------- header main content -------------------------*/
 .header-main-container {
-  /* width: 100%; */
-  display: flex;
   flex-direction:column;
   justify-content:center;
-  align-items: center;
   gap: 1rem;
-  white-space: pre-line;
   margin-top:2rem;
 }
-
 /*-------------------------- header text box -------------------------*/
-.header-text-box{
+/* .header-text-box{
   margin:1rem 0 .6rem 3rem;
-  /* line-height: .7rem; */
   color:var(--mainBlack);
 }
 .header-h1{
-  font-size: 2em;
+  font-size: 1.6em;
 }
 .header-lorem {
+  font-size: 1.1em;
+}
+.header-play-icone {
+  height: 12%;
+  width: 12%;
+}
+.header-play-text{
+  font-weight: 400;
+} */
+/*-------------------------- header img box -------------------------*/
+/* .header-img {
+  max-width: 260px;
+  margin:0 auto;
+} */
+/*-------------------------- part 3 Main -------------------------*/
+/* .part3-main-content{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+} */
+/*-------------------------- part 3 text box -------------------------*/
+/* .part3-text-box-h3{
+  font-size: 1.3em;
+  margin: 4rem 0 1.4rem 0rem;
+}
+.part3-text-box-list{
+padding-left: 1rem;
+} */
+/*-------------------------- part 3 img -------------------------*/
+/* .part3-img{
+  height: 300px;
+  width: 300px;
+  margin:0 auto;
+} */
+/*-------------------------- part 4 Main -------------------------*/
+/* .part4-3box{
+  flex-direction: column;
+} */
+/*-------------------------- part 5 -------------------------*/
+/* .social-img{
+  width:50px ;
+  height:50px;
+} */
+/*-------------------------- footer -------------------------*/
+/* .footer-3box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 4rem;
+} */
+/*-------------------------- footer logo -------------------------*/
+/* .footer-lorem{
+  margin-top: 1rem;
+}
+} */
+/*
+@media (max-width:1024px) {
+/*-------------------------- header main content -------------------------*/
+/* .header-main-container {
+  display: flex;
+  justify-content:space-between;
+  white-space: pre-line;
+  gap: 1rem;
+} */
+/*-------------------------- header text box -------------------------*/
+/* .header-text-box{
+  margin-right:2rem;
+  margin:1rem 1rem 1rem 5rem;
+  line-height: .7rem;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+} */
+/* .header-h1{
+  font-size: 2em;
+} */
+/* .header-lorem {
   font-size: 1.1em;
   font-weight: 450;
   line-height: 1.4rem;
@@ -598,82 +654,95 @@ background: linear-gradient(to left, #25c1e9, #556ff8);
   width: 12%;
 }
 .header-play-text{
-  font-weight: 400;
-}
+  font-weight: 350;
+  font-size: 1.1rem;
+} */
 
 /*-------------------------- header img box -------------------------*/
-.header-img {
-  max-width: 260px;
-  margin:0 auto;
+/* .header-img {
+  max-width: 270px;
+  /* margin:0 auto; */
+} */
+/*-------------------------- part 2 Main -------------------------*/
+/* .services-container {
+  width: 100%;
+  max-width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  grid-column-gap: rem;
+  grid-row-gap: 0rem;
 }
+.services-box{}
 
-/*-------------------------- part 3 -------------------------*/
-.part3-container{
-  color: var(--mainBlack);
+.img-container {
+  max-width:150px;
+  width: 70%;
+  margin-left: 2em;
+}
+.part2-imgs {
+  width: 100%;
+  min-height: 120px;
+}
+.part2-desc {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  white-space: pre-line;
+  text-align: justify;
+  overflow: visible;
 }
-/*-------------------------- part 3 Top -------------------------*/
-.why-choose-us-h2{
-  font-size: 2.2em;
-  /* margin: 2.1rem 0 .9rem 0; */
+ .part2-title {
+  margin: 0 0 1rem 2rem;
+  font-size: 1em;
+  line-height: 0.01;
+} */
+/* .part2-lorem {
+  overflow: visible;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.15rem;
+  white-space: pre-line;
+  word-spacing: 0rem;
+  text-align: justify;
 }
+.underline{
+  width: 100%;
+  height: 0.1rem;
+  background-color: #f0eded;
+} */
 /*-------------------------- part 3 Main -------------------------*/
-.part3-main-content{
+/* .part3-main-content{
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-/*-------------------------- about diamond and h3-------------------------*/
-.part3-diamond-h3{
-  display: flex;
-  flex-direction: row;
-  margin: 0 0rem 0 0rem;
-  gap: .2rem;
-}
-.diamond{
-  height: 28px;
-  width: 28px;
-  margin: 3.9rem .2rem 1rem 0rem;
-}
-.part3-text-box-h3{
-  font-size: 1.3em;
-  margin: 4rem 0 1.4rem 0rem;
-}
+} */
 /*-------------------------- part 3 text box -------------------------*/
-.part3-text-box{
-  display: flex;
-  flex-direction:column;
-  gap: 0rem;
-}
-.part3-text-box-h3{
+/* .part3-text-box-h3{
   font-size: 1.3em;
   margin: 4rem 0 1.4rem 0rem;
 }
 .part3-text-box-list{
-display: flex;
-flex-direction: column;
-/* align-items:flex-start; */
-gap: .7rem;
-/* margin-left:.2rem; */
-list-style:disc;
-font-size: .9em;
 padding-left: 1rem;
-}
+} */
 /*-------------------------- part 3 img -------------------------*/
-.part3-img{
+/* .part3-img{
   height: 300px;
   width: 300px;
   margin:0 auto;
+} */
+/*-------------------------- part 4 Main -------------------------*/
+/* .part4-3box{
+  flex-direction: row;
+} */
+/*-------------------------- part 5 -------------------------*/
+/* .social-img{
+  width:50px ;
+  height:50px;
 }
-
-/*-------------------------- part 4 -------------------------*/
-.part4-container{
+.part5-container{
   color: var(--mainBlack);
+  background-color: #f8faf9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -681,40 +750,8 @@ padding-left: 1rem;
   width: 100%;
   max-width: 100%;
   height: 100%;
-  margin: 2.4rem 0 .6rem 0;
+  margin: 3rem 0 .6rem 0;
 }
-/*-------------------------- part 4 Top -------------------------*/
-.what-client-say-h2{
-  font-size: 2.2em;
-  margin: 1.5rem 0 .6rem 0;
-}
-.part4-line{
-  width: 70%;
-  height: 0.3rem;
-  background-color: #f8faf9;
-}
-/*-------------------------- part 4 Main -------------------------*/
-.part4-3box{
-  flex-direction: column;
-}
-/*-------------------------- part 5 -------------------------*/
-.social-img{
-  width:50px ;
-  height:50px;
-}
-/*-------------------------- footer -------------------------*/
-.footer-3box{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 4rem;
-}
-/*-------------------------- footer logo -------------------------*/
-.footer-lorem{
-  margin-top: 1rem;
-}
-}
-@media (max-width: 768px) {}
+} */
 @media (max-width: 1279px) {}
 @media (max-width: 1280px) {}
