@@ -24,6 +24,7 @@ body {
 
 /*-------------------------- part 1 -------------------------*/
 header {
+  margin: 0 0 0 111;
   background:linear-gradient(to left, #25c1e9, #556ff8);
   /* position: fixed;
   top: 0;
@@ -35,7 +36,6 @@ header {
   width: 100%;
   transform: translateY(5px);
   /* transform: translate(20px, 30px); */
-  margin: 0rem 0 0 0;
 }
 /*-------------------------- navbar -------------------------*/
 .navbar{
@@ -45,12 +45,13 @@ header {
   align-items: center;
   flex-wrap: nowrap;
   /* background-color:var(--mainBlack); */
-  background-color:linear-gradient( #25c1e9, #556ff8) !important;
+  background-image:linear-gradient(to left, #25c1e9, #556ff8);
   position:sticky;
+  z-index: 100;
   top: 0;
-  /* background-color: var(--gradient-background); */
+  background-color: var(--gradient-background);
   overflow: hidden;
-  margin: 0 0 5rem 0;
+  margin: 1 0 0rem 0;
 }
 /*-------------------------- logo -------------------------*/
 .nav-logo {
@@ -82,7 +83,7 @@ ul {
   gap: 1.6em;
 }
 .menu-items a:hover {
-  color:gray;
+  color:var(--mainBlack);
   display: block;
 }
 a {
@@ -92,6 +93,11 @@ a {
 }
 .menu-box{
   display: none;
+}
+.line-nav{
+width: 100%;
+height: 1%;
+background-color: var(--mainWhite);
 }
 /*-------------------------- header main content -------------------------*/
 .header-main-container {
@@ -103,17 +109,17 @@ a {
   align-items: center;
   gap: 1.3rem;
   white-space: pre-line;
-  margin-top:20rem;
+  margin-top:10rem;
 }
 
 /*-------------------------- header text box -------------------------*/
 .header-text-box{
   /* margin-right:2rem; */
-  margin:2rem 3rem 1rem 20rem;
+  /* margin:2rem 3rem 1rem 20rem; */
   line-height: .7rem;
 }
 .header-h1{
-  margin-top:6rem;
+  /* margin-top:6rem; */
 
   font-size: 2.19em;
 }
@@ -139,14 +145,14 @@ a {
 
 /*-------------------------- header img box -------------------------*/
 .header-img {
-  margin:2rem 5rem 0 0;
+  /* margin:2rem 5rem 0 0; */
   max-width: 200px;
   width: 100%;
 }
 
 
 /*-------------------------- part 2 -------------------------*/
-.part2-container {
+.part2-container{
   color: var(--mainBlack);
   display: flex;
   flex-direction: column;
@@ -154,6 +160,7 @@ a {
   align-items: center;
   white-space: pre-line;
   margin-top: 1rem;
+  overflow: hidden;
 }
 
 /*-------------------------- part 2 Top -------------------------*/
@@ -172,7 +179,7 @@ a {
   width: 100%;
   max-width: 70%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 0rem;
 }
@@ -237,6 +244,7 @@ a {
   max-width: 100%;
   height: 100%;
   background-color: #f8faf9;
+  overflow: hidden;
 }
 /*-------------------------- part 3 Top -------------------------*/
 .why-choose-us-h2{
@@ -254,14 +262,13 @@ a {
 .part3-diamond-h3{
   display: flex;
   flex-direction: row;
-  margin: 0 0rem 0 0rem;
+  /* margin: 0 0rem 0 0rem; */
   gap: .2rem;
 }
-
 .diamond{
   height: 28px;
   width: 28px;
-  margin: 3.9rem .2rem 1rem 0rem;
+  margin: 3.85rem .2rem 1rem 0rem;
 }
 .part3-text-box-h3{
   font-size: 1.3em;
@@ -282,11 +289,12 @@ margin-left:.2rem;
 list-style:disc;
 font-size: .9em;
 padding-left: 3.4rem;
+/* margin: 1rem 3rem 0 0; */
 }
 /*-------------------------- part 3 img -------------------------*/
 .part3-img{
-  width: 32%;
-  height: 32%;
+  width: 250px;
+  height:250px;
   margin: 3rem 0 4.3rem 15.5rem;
 }
 
@@ -301,6 +309,7 @@ padding-left: 3.4rem;
   max-width: 100%;
   height: 100%;
   margin: 2.4rem 0 .6rem 0;
+  overflow: hidden;
 }
 /*-------------------------- part 4 Top -------------------------*/
 .what-client-say-h2{
@@ -383,6 +392,7 @@ font-size: .8em;
   max-width: 100%;
   height: 100%;
   margin: 3rem 0 .6rem 0;
+  overflow: hidden;
 }
 .find-us-in-social-media-h2{
   font-size: 1.5em;
@@ -409,6 +419,7 @@ font-size: .8em;
 
 footer{
   background: linear-gradient(to left, #25c1e9, #556ff8);
+  overflow: hidden;
 }
 .footer-3box{
 width: 70%;
