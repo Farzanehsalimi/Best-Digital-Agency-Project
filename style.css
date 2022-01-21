@@ -325,13 +325,13 @@ padding-left: 3.4rem;
   width: 100%;
   max-width: 100%;
   height: 100%;
-  margin: 2.4rem 0 6rem 0;
+  margin: 2.4rem 0 2rem 0;
   overflow: hidden;
 }
 /*-------------------------- part 4 Top -------------------------*/
 .what-client-say-h2{
   font-size: 2.4em;
-  margin: 1.5rem 0 .6rem 0;
+  margin: 1.5rem 0 0rem 0;
 }
 .part4-line{
   width: 70%;
@@ -349,7 +349,7 @@ padding-left: 3.4rem;
 .part4-profile-container{
   display: flex;
   align-items: end;
-  gap: .2rem;
+  gap: 0rem;
 }
 .part4-vertical-line{
   width: .27rem;
@@ -948,7 +948,7 @@ gap: 3rem;
       height: 220px;
     }
 }
-@media(max-width: 360px) {
+/* @media(max-width: 360px) {
   *{font-size: .9rem;}
   .part3-text-box-list{
     font-size: .8em;
@@ -964,9 +964,9 @@ gap: 3rem;
       width: 220px;
       height: 220px;
     }
-}
-/* ---------------------------280px-------------------------- */
-@media(max-width: 280px) {
+} */
+/* ---------------------------280px کمتر از -------------------------- */
+@media all and (max-width: 280px) {
   .nav-logo-svg{
     width:35px ;
     height:35px ;
@@ -1012,8 +1012,8 @@ gap: 3rem;
   margin:0rem;
 }
 .services-box{
-  padding: .5rem;
-  margin:1rem;
+  padding: .5rem .5rem 0 .5rem;
+  margin:1rem 0 1rem 0;
 }
 .img-container {
   width: 85%;
@@ -1034,13 +1034,20 @@ display: none;
   width:200px ;
   height:200px ;
 }
+.part4-3box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 0rem 0;
+  gap: 3.2rem;
+}
 .social-img{
   width: 30px;
   height: 30px;
 }
-  .footer-box3{
-    margin:0 0 0 2.5rem;
-  }
+.footer-box3{
+  margin:0 0 0 2.5rem;
+}
 .part3-main-content{
   width: 85%;
 }
@@ -1086,6 +1093,9 @@ font-size: .9em;
 .social-img{
   width:30px;
   height:30px;
+}
+.part5-container{
+  margin: 2rem 0 2rem 0;
 }
 .footer-3box{
 width: 85%;
