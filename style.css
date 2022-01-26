@@ -88,6 +88,13 @@ a {
 .menu-box{
   display: none;
 }
+/* .items-hover:hover{
+  text-align: center;
+  padding:.3rem 0 0 0;
+  width:100% ;
+  height: 3rem;
+  background-color:var(--gradient-background);
+} */
 #services{}
 /*-------------------------- header main content -------------------------*/
 .header-main-container {
@@ -131,7 +138,6 @@ a {
     width: 100%;
     margin: 9rem 19rem 0 0;
 }
-/*-------------------------- part 2 -------------------------*/
 .part2-container{
   color: var(--mainBlack);
   display: flex;
@@ -171,7 +177,7 @@ a {
 }
 .services-container:hover
 .services-box{
-  filter:blur(3px);
+  /* filter:blur(10px); */
   opacity:.5;
   transform: scale(.98);
   box-shadow:none;
@@ -233,7 +239,6 @@ a {
 }
 .btn-2:hover{
   box-shadow: inset 230px 0 0 0 black;
-  
   cursor: pointer;
   /* transition: 0.5s; */
 }
@@ -242,7 +247,7 @@ a {
   font-weight: 400;
   transform: scale(3,3);
 }
-a:hover{
+.btn-2 a:hover{
   color:rgb(224, 221, 221);
 }
 /*-------------------------- part 3 -------------------------*/
@@ -382,6 +387,11 @@ font-weight: 400;
   height: 50px;
   margin: 0 0 1rem 0;
 }
+.profile-pic:hover{
+  transform: rotateY(360deg);
+transition-duration: .8s;
+cursor: pointer;
+}
 .info-prof{
   display: flex;
   flex-direction: column;
@@ -426,6 +436,11 @@ font-size:1em;
   width:80px ;
   height:80px;
 }
+.social-img:hover{
+transform: rotateY(360deg);
+transition-duration: 1s;
+cursor: pointer;
+}
 /*-------------------------- footer -------------------------*/
 .bottom-wave{
   /* transform: translateZ(20px); */
@@ -446,7 +461,7 @@ gap: 0rem;
 .footer-box1{
 display: flex;
 flex-direction: column;
-margin-right: 13rem;
+margin:0 8rem 1.5rem 0;
 }
 /*-------------------------- footer logo -------------------------*/
 .footer-logo-container{
@@ -457,6 +472,11 @@ margin-right: 13rem;
 .footer-logo{
   width: 5rem;
   height:5rem;
+}
+.footer-logo:hover{
+transform: rotateY(360deg);
+transition-duration: 1.2s;
+cursor: pointer;
 }
 .footer-demo-logo-text{
   font-family:'Caveat',sans-serif;
@@ -472,9 +492,8 @@ margin-right: 13rem;
 /*-------------------------- footer box 2 -------------------------*/
 .footer-box2{
   display:grid;
-  /* gap: rem; */
   margin:0 auto;
-  margin: 0 12rem 0 0;
+  margin: 0 10rem 0 0;
 }
 .contact-us-3box{
   display: flex;
@@ -517,19 +536,19 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 gap: .5rem;
-margin: .4rem 0 0 0rem;
+margin: .4rem 2.5rem 0 0rem;
 }
 .footer-box3-h4{
-  font-size: 1.4em;
+  font-size: 1.6em;
   margin:.5rem 0 0 0;
 }
 .form{}
 
 #form-input{
-  font-size: 1em;
+  font-size: 1.2em;
   color:rgb(136, 130, 130);
   padding: .6rem 3rem .6rem .5rem ;
-  margin: 1rem 3rem .6rem 0rem;
+  margin: 1rem 1rem .6rem 0rem;
   border: 1px solid #ccc;
   border: 0;
   border-radius: 2px;
@@ -537,20 +556,39 @@ margin: .4rem 0 0 0rem;
 .button-footer{
   background:var(--gradient-background);
   border: 0;
-  padding: 0.75rem 1.4rem 0.75rem 1.4rem ;
-  border-radius: .28rem;
+  padding: 1rem 4rem 0.75rem 1.4rem;
   color: var(--mainWhite);
-  text-align: center;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 black;
+  transition: ease-out .4s;
+  outline: none;
+}
+.button-footer a{
   font-weight: bold;
-  font-size: .9em
+  font-size: 1.5em;
+  margin: 0 0rem 0 2.5rem;
 }
 .button-footer:hover{
   border: 3.2px solid linear-gradient(to left, #25c1e9, #556ff8);
+  box-shadow: inset 330px 0 0 0 black;
   text-align: center;
   text-decoration: none;
   /* display: inline-block; */
   transition-duration: 0.4s;
   cursor: pointer;
+}
+.btn-2:hover{
+  box-shadow: inset 230px 0 0 0 black;
+  cursor: pointer;
+  /* transition: 0.5s; */
+}
+.btn-2 a{
+  font-size: 2em;
+  font-weight: 400;
+  transform: scale(3,3);
+}
+a:hover{
+  color:rgb(224, 221, 221);
 }
 /*-------------------------- end -------------------------*/
 .copyright-text{
