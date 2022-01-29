@@ -367,12 +367,12 @@ a {
 }
 
 .part4-3box {
-    width: 75%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 10rem 0rem 14rem;
-    gap: 4rem;
+    margin: 3rem 0rem 0rem 0rem;
+    gap: 2.5rem;
 }
 
 .part4-profile-container {
@@ -383,7 +383,7 @@ a {
 
 .part4-vertical-line {
     width: .8rem;
-    height: 12rem;
+    height: 13rem;
     background-color: #556ff8;
 }
 
@@ -398,7 +398,6 @@ a {
 }
 
 .prof-lorem {
-    width: 90%;
     font-size: 1em;
     margin: 0 0 0rem .6rem;
     font-weight: 400;
@@ -408,7 +407,7 @@ a {
 .info-prof-all {
     display: flex;
     flex-direction: row;
-    margin: 1.2rem 0 .1rem .8rem;
+    margin: 2rem 0 .1rem .8rem;
     justify-content: flex-start;
     gap: .6rem;
 }
@@ -697,15 +696,34 @@ a:hover {
         line-height: 1.6rem;
         text-align: unset;
     }
+    .part4-3box {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0rem 0rem 0rem;
+        gap: 1.8rem;
+    }
+    .info-prof-all {
+        display: flex;
+        flex-direction: row;
+        margin: 1.8rem 0 .1rem .8rem;
+        justify-content: flex-start;
+        gap: .6rem;
+    }
+    .profile-pic {
+        width: 45px;
+        height: 45px;
+        margin: 0 0 1rem 0;
+    }
 }
 
 @media screen and (max-width: 869px) {
     .services-container {
-        width: 10%;
-        max-width: 75%;
+        max-width: 50%;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-column-gap: 1.2rem;
         grid-row-gap: 0rem;
     }
@@ -720,12 +738,12 @@ a:hover {
         transition: all 200ms ease-out;
     }
     .img-container {
-        max-width: 400px;
+        max-width: 280px;
         width: 100%;
         margin: 0 auto;
     }
     .part2-imgs {
-        width: 90%;
+        width: 80%;
         min-height: 160px;
         margin: 0 auto;
     }
@@ -739,7 +757,7 @@ a:hover {
     }
     .part2-title {
         margin: 0 auto;
-        margin-bottom: 1rem;
+        /* margin-top: .5rem .5rem; */
         font-size: 1.2em;
         line-height: 0.01;
     }
@@ -749,10 +767,38 @@ a:hover {
         line-height: 1.6rem;
         text-align: unset;
     }
+    ul {
+        display: none;
+    }
+    .hamburger-menu {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: end;
+    }
+    .part4-3box {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 10rem 0rem 14rem;
+        gap: 4rem;
+    }
+    .part4-vertical-line {
+        width: .4rem;
+        height: 11rem;
+        background-color: #556ff8;
+    }
+    .footer-3box {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        /* margin: 0 auto; */
+        gap: 3rem;
+    }
 }
 
-
-}
 @media screen and (max-width: 769px) {
     .header-main-container {
         width: 100%;
@@ -763,44 +809,61 @@ a:hover {
         gap: 0rem;
         margin: 0rem 0 0 3rem;
     }
-    
     .header-text-box {
         width: 80%;
         line-height: .7rem;
         margin: 0 auto;
         margin: 4rem 0 0 0rem;
     }
-    
     .header-h1 {
         font-size: 1.5em;
     }
-    
     .header-lorem {
         font-size: 1em;
         font-weight: 400;
         line-height: 1.6rem;
     }
-    
     .header-img {
         max-width: 300px;
         width: 100%;
         margin: 2rem 0 0 0;
     }
-    
-    ul {
-        display: none;
-    }
-    
-    .hamburger-menu {
-        width: 45px;
-        height: 45px;
+    .part3-main-content {
+        width: 75%;
+        height: 100%;
         display: flex;
-        justify-content: end;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .part3-text-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: .4rem;
+    }
+    .part3-img {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    /* .part5-2box {
+        display: flex;
+        flex-direction: column;
+    } */
+    .social-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 0 3.1rem 0;
+        gap: .7rem;
     }
 }
+
 @media screen and (max-width: 481px) {
     .header-h1 {
         font-size: 1.3em;
     }
 }
+
 @media screen and (max-width: 480px) {}
